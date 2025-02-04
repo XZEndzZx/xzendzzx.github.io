@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Químicos nos Telemóveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Elementos Químicos nos Telemóveis</h1>
+        <p>Explore os elementos químicos que compõem seus aparelhos móveis!</p>
+    </header>
+
+    <!-- Grupos dos elementos na tabela periódica -->
+    <section class="element-list">
+        <div class="element-list">
+            <!-- Metais Alcalinos -->
+            <div class="group">
+                <h2>Metais Alcalinos</h2>
+                <button class="element-btn" data-element="Li"><span class="symbol">Li</span><span class="element-name">Lítio</span></button>
+            </div>
+            
+            <!-- Metais de Transição -->
+            <div class="group">
+                <h2>Metais de Transição</h2>
+                <button class="element-btn" data-element="Al"><span class="symbol">Al</span><span class="element-name">Alumínio</span></button>
+                <button class="element-btn" data-element="Cu"><span class="symbol">Cu</span><span class="element-name">Cobre</span></button>
+                <button class="element-btn" data-element="Fe"><span class="symbol">Fe</span><span class="element-name">Ferro</span></button>
+                <button class="element-btn" data-element="Pb"><span class="symbol">Pb</span><span class="element-name">Chumbo</span></button>
+                <button class="element-btn" data-element="Ag"><span class="symbol">Ag</span><span class="element-name">Prata</span></button>
+                <button class="element-btn" data-element="Au"><span class="symbol">Au</span><span class="element-name">Ouro</span></button>
+            </div>
+            
+            <!-- Semimetais -->
+            <div class="group">
+                <h2>Semimetais</h2>
+                <button class="element-btn" data-element="Si"><span class="symbol">Si</span><span class="element-name">Silício</span></button>
+            </div>
+        </div>
+        
+        <div id="info"></div> <!-- Área para mostrar informações detalhadas -->
+        
+    </section>
+
+    <section class="element-info" id="info">
+        <p>Selecione um elemento para ver mais informações.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
