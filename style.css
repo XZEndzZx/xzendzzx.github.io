@@ -58,7 +58,6 @@ header p {
     cursor: pointer;
     outline: none;
     font-weight: bold;
-    text-transform: uppercase;
     overflow: hidden;
     transition: all 0.3s ease;
 }
