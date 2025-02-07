@@ -12,7 +12,6 @@ const elementColors = {
     'Ta': '#808080',
     'Nd': '#808080',
     'Zn': '#bac4c8',
-    'Mn': '#494d4b',
     'Ti': '#5b798e',
 };
 
@@ -142,15 +141,6 @@ function mostrarDetalhes(elemento) {
                 <p><strong>Função no celular:</strong> Encontrado em alguns circuitos e componentes eletrônicos, além de ser usado no revestimento de outros metais para evitar corrosão.</p>
                 <p><strong>Propriedades:</strong> O zinco é um metal essencial usado principalmente para galvanização, um processo que protege o ferro e o aço contra a corrosão, aumentando sua durabilidade.</p>
                 <p><strong>Curiosidades:</strong> O zinco é um dos poucos metais que, quando dobrado, emite um som característico chamado "grito do zinco". Esse som ocorre devido à fricção entre os cristais internos do metal ao serem deformados.</p>
-                `;
-                break;
-        case 'Mn':
-            conteudo = `
-                <h2>Manganês (Mn)</h2>
-                <p><strong>Número Atômico:</strong> 25</p>
-                <p><strong>Função no celular:</strong> Usado em algumas baterias de lítio, melhorando a estabilidade e eficiência.</p>
-                <p><strong>Propriedades:</strong> utilizado em baterias</p>
-                <p><strong>Curiosidades:</strong> O manganês é tão importante para o corpo humano quanto para a indústria! Ele ajuda na formação dos ossos, na cicatrização e no metabolismo. No entanto, em excesso, pode ser tóxico e causar problemas neurológicos semelhantes ao Parkinson.</p>
                 `;
                 break;
         case 'Ti':
