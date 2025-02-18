@@ -1,60 +1,50 @@
-<!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementos Químicos nos Telemóveis</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Configuração de Wi-Fi no Windows</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Elementos Químicos nos Telemóveis</h1>
-        <p>Explore os elementos químicos que compõem seus aparelhos móveis!</p>
+        <img src="logo.png" alt="Logo Wi-Fi" class="logo">
+        <h1>Guia de Conexão Wi-Fi</h1>
     </header>
-
-    <!-- Grupos dos elementos na tabela periódica -->
-    <section class="element-list">
-        <div class="element-list">
-            <!-- Metais Alcalinos -->
-            <div class="group">
-                <h2>Metais Alcalinos</h2>
-                <button class="element-btn" data-element="Li"><span class="symbol">Li</span><span class="element-name">Lítio</span></button>
-            </div>
-            
-            <!-- Metais de Transição -->
-            <div class="group">
-                <h2>Metais de Transição</h2>
-                <button class="element-btn" data-element="Al"><span class="symbol">Al</span><span class="element-name">Alumínio</span></button>
-                <button class="element-btn" data-element="Cu"><span class="symbol">Cu</span><span class="element-name">Cobre</span></button>
-                <button class="element-btn" data-element="Fe"><span class="symbol">Fe</span><span class="element-name">Ferro</span></button>
-                <button class="element-btn" data-element="Pb"><span class="symbol">Pb</span><span class="element-name">Chumbo</span></button>
-                <button class="element-btn" data-element="Ag"><span class="symbol">Ag</span><span class="element-name">Prata</span></button>
-                <button class="element-btn" data-element="Au"><span class="symbol">Au</span><span class="element-name">Ouro</span></button>
-                <button class="element-btn" data-element="Co"><span class="symbol">Co</span><span class="element-name">Cobalto</span></button>
-                <button class="element-btn" data-element="Ta"><span class="symbol">Ta</span><span class="element-name">Tântalo</span></button>
-                <button class="element-btn" data-element="Zn"><span class="symbol">Zn</span><span class="element-name">Zinco</span></button>
-                <button class="element-btn" data-element="Ti"><span class="symbol">Ti</span><span class="element-name">Titânio</span></button>
-            </div>
-            </div>
-            
-            <!-- Semimetais -->
-            <div class="group">
-                <h2>Semimetais</h2>
-                <button class="element-btn" data-element="Si"><span class="symbol">Si</span><span class="element-name">Silício</span></button>
-            </div>
-
-            <div class="group">
-                <h2>Lantanídeos</h2>
-                <button class="element-btn" data-element="Nd"><span class="symbol">Nd</span><span class="element-name">Neodímio</span></button>
-            </div>
-        </div>
-        
-        <div id="info"></div> <!-- Área para mostrar informações detalhadas -->
-        
+    
+    <section class="container" id="home">
+        <h1>Conecte-se à Internet de Forma Simples</h1>
+        <p>Aprenda a configurar e otimizar sua rede Wi-Fi.</p>
+        <button onclick="startTutorial()">Começar</button>
     </section>
 
-    <section class="element-info" id="info">
-        <p>Selecione um elemento para ver mais informações.</p>
+    <section id="tutorial" class="hidden">
+        <h2>Passo <span id="stepNumber">1</span></h2>
+        <p id="stepText">Abra as configurações do Windows.</p>
+        <div>
+            <button onclick="prevStep()">Voltar</button>
+            <button onclick="nextStep()">Próximo</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Solução de Problemas</h2>
+        <details>
+            <summary>Meu Wi-Fi não aparece na lista</summary>
+            <p>Certifique-se de que o Wi-Fi está ativado no seu dispositivo.</p>
+        </details>
+        <details>
+            <summary>Estou conectado, mas sem internet</summary>
+            <p>Reinicie o roteador e verifique sua conexão.</p>
+        </details>
+    </section>
+
+    <section class="container">
+        <h2>Testar Conexão</h2>
+        <button onclick="checkConnection()">Verificar Conexão</button>
+        <button onclick="scanNetworks()">Mostrar Redes Próximas</button>
+        <ul id="networkList"></ul>
+        <p id="connectionStatus"></p>
+        <p id="latencyStatus"></p>
     </section>
 
     <script src="script.js"></script>
