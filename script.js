@@ -1,9 +1,12 @@
 let step = 1;
 const steps = [
-    "Abra as configurações do Windows.",
-    "Clique em 'Rede e Internet'.",
-    "Selecione 'Wi-Fi' e escolha uma rede disponível.",
-    "Digite a senha e clique em conectar."
+    "Clique no ícone de rede na barra de tarefas.",
+    "Verifique se o WI-FI está ativado, se não estiver, clique no botão 'WI-FI' para ativá-lo",
+    "Escolha a rede WI-FI desejada",
+    "Clique em ligar",
+    "Se a rede estiver protegida, introduza a palavra-passe e pressione avançar",
+    "Escolha se deseja ativar a descoberta de rede",
+    "Ao ligar-se ao uma rede, marque a opção 'Ligar automaticamente'.",
 ];
 
 function startTutorial() {
